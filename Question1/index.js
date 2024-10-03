@@ -15,7 +15,7 @@ function lowerCaseWords(array) {
 }
 
 const tests = [1, [1, true, 'Three', 4, 'FIVE'], [1,2,3,4,5]]
-for (let i in tests) {
+for (let i in tests) { //performing tests this way lets me add as many tests as i want by only adding to tests array
     lowerCaseWords(tests[i]).then(data => {
         console.log("Test " + (parseInt(i) + 1) + ": \"" + tests[i] + "\"");
         console.log(data);
